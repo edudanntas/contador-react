@@ -6,10 +6,10 @@ const CustomButton3 = styled(CustomButton)`
 background-color: #fcac00;
 `
 
-const OrangeButton = ({ children, onClick }) => {
+const ResetButton = ({ children, onClick }) => {
     return (<CustomButton3 onClick={onClick}>
         {children}
     </CustomButton3>);
 }
 
-export default OrangeButton;
+export default ResetButton;

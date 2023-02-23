@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './App.css'
-import GreenButton from "./components/AddButton";
-import RedButton from "./components/RemoveButton";
-import OrangeButton from "./components/ResetButton";
+import AddButton from "./components/AddButton";
+import RemoveButton from "./components/RemoveButton";
+import ResetButton from "./components/ResetButton";
 
 const App = () => {
   const [number, SetNumber] = useState(0);
@@ -21,9 +21,9 @@ const App = () => {
 
   return <div className="container">
     <h1>{number}</h1>
-    <GreenButton onClick={handleAddNumber}>Adicionar</GreenButton>
-    <RedButton onClick={handleDecreaseNumber}>Remover</RedButton>
-    <OrangeButton onClick={handleResetNumber}>Zerar</OrangeButton>
+    <AddButton onClick={handleAddNumber}>Adicionar</AddButton>
+    <RemoveButton onClick={handleDecreaseNumber}>Remover</RemoveButton>
+    <ResetButton onClick={handleResetNumber}>Zerar</ResetButton>
   </div>
 }
 

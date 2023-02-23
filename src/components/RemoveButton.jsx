@@ -6,10 +6,10 @@ const CustomButton2 = styled(CustomButton)`
 background-color: #cc2121;
 `
 
-const RedButton = ({ children, onClick }) => {
+const RemoveButton = ({ children, onClick }) => {
     return (<CustomButton2 onClick={onClick}>
         {children}
     </CustomButton2>);
 }
 
-export default RedButton;
+export default RemoveButton;
